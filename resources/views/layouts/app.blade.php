@@ -60,22 +60,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{asset('occurrences.search')}}" class="waves-effect">
+                        <a href="{{route('occurrences.search')}}" class="waves-effect">
                             <i class="fa fa-car"></i><span> Viaturas </span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{asset('occurrences.search')}}" class="waves-effect">
+                        <a href="{{route('occurrences.search')}}" class="waves-effect">
                             <i class="dripicons-warning"></i><span> Ocorrências </span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{asset('occurrences.map')}}" class="waves-effect">
+                        <a href="{{route('occurrences.map')}}" class="waves-effect">
                             <i class="dripicons-map"></i><span> Mapa de Ocorrências </span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{asset('logout')}}" class="waves-effect">
+                        <a href="{{route('logout')}}" class="waves-effect">
                             <i class="dripicons-arrow-left"></i><span> Logout </span>
                         </a>
                     </li>
