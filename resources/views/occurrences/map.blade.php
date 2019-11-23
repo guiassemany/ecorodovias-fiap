@@ -35,7 +35,7 @@
         }
 
         .card-map {
-            min-height: 500px;
+            min-height: 700px;
         }
     </style>
 @endpush
@@ -45,14 +45,12 @@
         var map;
         var occurrences = {!! json_encode($ocLatLongs) !!}
             var markers = [];
-        console.log(occurrences);
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: parseFloat(occurrences[0].coord.lat), lng: parseFloat(occurrences[0].coord.lng)},
                 zoom: 12
             });
             occurrences.map(function(occ){
-                console.log(occ.label);
                 var marker = new google.maps.Marker({
                     position: {lat: parseFloat(occ.coord.lat), lng: parseFloat(occ.coord.lng)},
                     map: map,
