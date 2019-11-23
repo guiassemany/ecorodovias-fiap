@@ -54,13 +54,13 @@
                     <li class="menu-title">Menu</li>
 
                     <li>
-                        <a href="index.html" class="waves-effect">
+                        <a href="{{route('dashboard')}}" class="waves-effect">
                             <i class="dripicons-meter"></i>
                             <span> Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('occurrences.search')}}" class="waves-effect">
+                        <a href="{{route('officialVehicles.search')}}" class="waves-effect">
                             <i class="fa fa-car"></i><span> Viaturas </span>
                         </a>
                     </li>
@@ -109,12 +109,15 @@
 
                     <ul class="list-inline float-right mb-0">
                         <li class="list-inline-item dropdown notification-list">
+                            <span class="text-white">USUÁRIO: <b>{{Auth::user()->name}}</b></span>
                             <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
                                aria-haspopup="false" aria-expanded="false">
-                                <img src="{{asset('assets/images/users/user-1.jpg')}}" alt="user" class="rounded-circle">
+                                <img src="{{asset('assets/images/users/nouser.png')}}" alt="user" class="rounded-circle">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-logout m-r-5 text-muted"></i> Logout
+                                </a>
                             </div>
                         </li>
 

@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/occurrences', 'Api\OccurrencesController@index');
+Route::get('/nearOccurrences', 'Api\OccurrencesController@getOccurrencesNearby');

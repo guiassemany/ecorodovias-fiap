@@ -26,6 +26,10 @@ Route::get('/occurrences', 'OccurrencesController@index')->name('occurrences.ind
 Route::get('/occurrences/{occurrence_id}/details', 'OccurrencesController@details')->name('occurrences.details');
 Route::get('/occurrences/map', 'OccurrencesController@map')->name('occurrences.map');
 
+Route::get('/officialVehicles/search', 'OfficialVehiclesController@search')->name('officialVehicles.search');
+Route::get('/officialVehicles', 'OfficialVehiclesController@index')->name('officialVehicles.index');
+Route::get('/officialVehicles/{officialVehicle_id}/details', 'OfficialVehiclesController@details')->name('officialVehicles.details');
+
 Route::get('/teste', function(){
     $ocur = Occurrence::first();
     dd($ocur);
